@@ -18,7 +18,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          choco install ninja cmake git -y
+          choco install ninja cmake -y
           choco install visualstudio2022buildtools --package-parameters "--add Microsoft.VisualStudio.Component.VC.Tools.x86.x64" -y
 
       - name: Download Skia
